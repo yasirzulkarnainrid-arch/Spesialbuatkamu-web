@@ -194,7 +194,7 @@
         <div class="card">
 
             <div class="cake">
-                🎂
+                🏔️
             </div>
 
             <h1>
@@ -279,7 +279,11 @@
 
             buatConfetti();
 
-            setInterval(buatHati, 700);
+            const intervalId = setInterval(buatHati, 700);
+
+            setTimeout(() => {
+                clearInterval(intervalId);
+            }, 6000);
         }
 
         function putarMusik() {
@@ -320,8 +324,8 @@
                 "🎉",
                 "✨",
                 "💖",
-                "🎂",
-                "🥳"
+                "🏔️",
+                "🥾"
             ];
 
             for (let i = 0; i < 40; i++) {
